@@ -7,7 +7,7 @@ RUN yum -y update && yum clean all
 RUN yum -y install gcc php-pear php-devel make openssl-devel && yum clean all
 RUN yum install -y \
 	mysql \
-  php \
+	php \
 	php-common \
 	php-dba \
 	php-gd \
@@ -17,16 +17,16 @@ RUN yum install -y \
 	php-odbc \
 	php-pdo \
 	php-pcre \
-  php-spl \
-  php-openssl \
-  php-intl \
-  php-icu \
-  php-fileinfo \
-  php-dom \
-  php-curl \
-  php-gd \
-  wget \
-  net-tools \
+	php-spl \
+	php-openssl \
+	php-intl \
+	php-icu \
+	php-fileinfo \
+	php-dom \
+	php-curl \
+	php-gd \
+	wget \
+	net-tools \
 RUN wget http://downloads.zend.com/guard/6.0.0/ZendGuardLoader-70429-PHP-5.4-linux-glibc23-x86_64.tar.gz
 RUN tar -zxvf ZendGuardLoader-*.tar.gz
 
