@@ -1,11 +1,12 @@
 FROM debian:jessie
 MAINTAINER Florax <simple.sharky@gmail.com>
-LABEL Description="Linux+PHP 5.4. CentOS 7 based. \
+LABEL Description="Linux+PHP 5.4. Debian based. \
 
 
 RUN \
   apt-get -qq update && \
-  apt-get -qq mysql \
+  apt-get -qq install \
+  mysql \
   apt-get -qq install \
     php5 php5-pcre php5-spl php5-mbstring php5-openssl php5-intl php5-icu php5-fileinfo php5-dom php5-curl php5-gd php5-mysql \
     && \
