@@ -30,6 +30,6 @@ RUN cp /zend-loader-php5.6-linux-x86_64/ZendGuardLoader.so /usr/lib/php5/
 RUN sh -c 'echo zend_extension=/usr/lib/php5/ZendGuardLoader.so >> /etc/php5/apache/php.ini'
 RUN sh -c 'echo zend_loader.enable=1 >> /etc/php5/apache/php.ini'
 
-CMD ["php-conf"]
+CMD ["php-fpm"]
 
 EXPOSE 80 3306
