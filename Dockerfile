@@ -8,7 +8,7 @@ RUN \
   apt-get -qq update && \
   apt-get -qq install \
   mysql-client \
-  php5 \
+  php-fpm \
   libpcre3 \
   php5-cli \
   php5-intl \
